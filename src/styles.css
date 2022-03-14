@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  font-size: 16px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  min-height: 80vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-body {
+  width: 100%;
+  flex: 1;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  box-shadow: 0 0 4px #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  align-self: flex-start;
+  padding: 0.25rem 0.5rem;
+  font-family: 0.9rem;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #333;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.todo-item {
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0 4px #ccc;
+  margin: 0.25rem;
+  border-radius: 2px;
+}
+
+.todo-item:hover {
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 0 4px #333;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.2s ease-in all;
+}
+
+.display-hide {
+  display: none;
+}
+
+.todo-item-done {
+  background-color: #aaa;
+  text-decoration: line-through;
+}
